@@ -1,0 +1,105 @@
+body{
+    background: rgb(217,9,104);
+    background: linear-gradient(262deg, rgba(217,9,104,0.8057598039215687) 0%, rgba(77,3,60,1) 31%, rgba(2,0,36,1) 48%);
+    background-attachment: fixed;
+}
+
+header{
+    border-bottom: solid 0.5px #d9097f6a;
+}
+
+.nav{
+    background-color: #020024 !important;
+}
+
+.c-item{
+     height: 480px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.form_op{
+    display: flex;
+    justify-content: space-evenly;
+}
+.searchbar{
+    display: flex;
+}
+
+label{
+    color: #fff;
+}
+
+.crd_foot{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: #020024;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: solid 0.2px #d9097f6a;
+}
+
+.social{
+    border-radius: 100%;
+    width: 50px;
+    padding: .3rem ;
+    margin: 15px;
+}
+
+
+
+.form_div{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+textarea{
+    width: 500px;
+    height: 200px;
+}
+
+.submit_btn{
+    display: flex;
+    align-items: center;
+}
+
+.card_div{
+    max-width: 900px;
+    margin: 50px;
+    padding: 25px;
+    align-self: center;
+    justify-self: center;
+}
+.div_data{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 25px;
+}
+
+.form{
+    border: solid 0.5px #d9097f6a;
+    padding: 10px;
+}
+
+.div_table{
+    border: solid 0.5px #d9097f6a !important;
+}
+
+#food_img{
+    height: 423px;
+}
+.det_span{
+    display: inline-block;
+}

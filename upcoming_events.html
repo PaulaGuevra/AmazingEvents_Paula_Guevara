@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>AE Upcoming Events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+</head>
+
+<body>
+    <header>
+
+        <nav class=" nav navbar navbar-dark navbar-expand-md  bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./assets/amazing_brand.png" alt="Bootstrap" width="125">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Upcoming Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./past_events.html">Past Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./stats.html">Stats</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid mt-2">
+        <div id="carouselExampleIndicators" class="carousel slide col-auto" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active c-item">
+                    <img src="./assets/optional_banner_1.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+                        <h1 class="display-1 fw-bolder mt-5">UPCOMING EVENTS</h1>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="./assets/optional_banner_2.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-5  d-none d-md-block">
+                        <h1 class="display-1 fw-bolder mt-5">UPCOMING EVENTS</h1>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="./assets/optional_banner_3.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-5  d-none d-md-block">
+                        <h1 class="display-1 fw-bolder mt-5">UPCOMING EVENTS</h1>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="./assets/optional_banner_4.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+                        <h1 class="display-1 fw-bolder mt-5">UPCOMING EVENTS</h1>
+                    </div>
+                </div>
+                <div class="carousel-item c-item">
+                    <img src="./assets/optional_banner_5.jpg" class="d-block w-100 c-img" alt="...">
+                    <div class="carousel-caption top-0 mt-5 d-none d-md-block">
+                        <h1 class="display-1 fw-bolder mt-5">UPCOMING EVENTS</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <form class="form_op row row-cols-lg-auto g-3  align-content-around mt-3">
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category1">
+                    <label class="form-check-label" for="category1">
+                        Category
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category2">
+                    <label class="form-check-label" for="category2">
+                        Category
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category3">
+                    <label class="form-check-label" for="category3">
+                        Category
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category4">
+                    <label class="form-check-label" for="category4">
+                        Category
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="category5">
+                    <label class="form-check-label" for="category5">
+                        Category
+                    </label>
+                </div>
+            </div>
+            <div class="searchbar col-12">
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+            </div>
+        </form>
+        <!-- cards -->
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/food_fair.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Festival of the collectivities</h5>
+                            <p class="card-text">Enjoy your favorite dishes from different countries in a unique event for the whole family.</p>
+                        </div>
+                        <div class="crd_foot card-footer">
+                            <span class="card-text">$45</span>
+                            <a class="btn btn-dark" href="./details.html" role="button">Details</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/marathon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">10K for life</h5>
+                            <p class="card-text">Come and exercise, improve your health and lifestyle.</p>
+                        </div>
+                        <div class="crd_foot card-footer">
+                            <span class="card-text">$3</span>
+                            <a class="btn btn-dark" href="./details.html" role="button">Details</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/music_concert.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Metallica in concert</h5>
+                            <p class="card-text">The only concert of the most emblematic band in the world</p>
+                        </div>
+                        <div class="crd_foot card-footer">
+                            <span class="card-text">$150</span>
+                            <a class="btn btn-dark" href="./details.html" role="button">Details</a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div>
+            <img src="./assets/instagram.png" alt="" class="social img-fluid">
+            <img src="./assets/facebook.png" alt="" class="social img-fluid">
+            <img src="./assets/whatsapp.png" alt="" class="social img-fluid">
+        </div>
+        <p class="text-center">
+            Copyright &copy; 2023 by Paula Guevara</p>
+        </p>
+        <span class="text-center">COHORT</span>
+
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
