@@ -15,7 +15,7 @@ header{
 
 
 .c-item{
-     height: 310px;
+     height: 295px;
 }
 
 .c-img{
@@ -95,4 +95,18 @@ textarea{
 
 .det_span{
     display: inline-block;
+}
+
+.nomatch{
+    text-align: center;
+    color: #fff;
+    font-size: large;
+}
+
+.price{
+    font-weight: 600;
+}
+
+.det_img{
+    height: -webkit-fill-available !important;
 }

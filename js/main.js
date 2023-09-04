@@ -1,8 +1,10 @@
-let eventContainer = document.getElementById("eventContainer")
 
-function generateCards(array, cardContainer) {
-  for (const event of array) {
-    let card = `<div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-4">
+let cardContainer = document.getElementById("eventContainer")
+
+function generateCards(array,cardContainer){
+  let html = "";
+  array.forEach(event => {
+    html += `<div class="col-12 col-sm-6 col-md-4 col-xl-3 mt-4">
     <div class="card h-100">
         <img src="${event.image}" class="card-img-top" alt="${event.name}">
         <div class="card-body">
@@ -12,12 +14,25 @@ function generateCards(array, cardContainer) {
         </div>
         <div class="crd_foot card-footer">
             <span class="card-text">$${event.price}</span>
-            <a class="btn btn-dark" href="./details.html" role="button">Details</a>
+            <a class="btn btn-dark" href="./details.html?_id=${event._id}" role="button">Details</a>
         </div>
     </div>
 </div>`;
-    document.getElementById(cardContainer).innerHTML += card;
-  }
+  })
+  cardContainer.innerHTML = html
 }
-generateCards(data.events,"eventContainer");
+generateCards(data.events,cardContainer)
 
+
+
+document.addEventListener('change', e => {
+  if (e.target.classList.contains('categorychecks')) {
+      searchAndFilter(data.events)
+
+  }
+})
+
+let buscador = document.querySelector('input[name=search]');
+buscador.addEventListener('input', () => {
+    searchAndFilter(data.events)
+})
