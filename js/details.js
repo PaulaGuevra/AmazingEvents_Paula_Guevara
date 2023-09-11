@@ -1,17 +1,22 @@
-const queryString = location.search
+const url = "https://mindhub-xj03.onrender.com/api/amazing"
+fetch(url)
+    .then(response => response.json())
+    .then((responseData) => {
+        const data = responseData.events
+        const queryString = location.search
 
-const params = new URLSearchParams(queryString)
+        const params = new URLSearchParams(queryString)
 
-const _id = params.get("_id")
+        const _id = params.get("_id")
 
- const eventDetails = data.events.find(event => event._id == _id)
+        const eventDetails = data.find(event => event._id == _id)
 
-const div = document.querySelector('#details_div');
-div.innerHTML = `<div class="row g-12">
-    <div class="col-md-6">
+        const div = document.querySelector('#details_div');
+        div.innerHTML = `<div class="row g-12">
+        <div class="col-md-6">
        <img src="${eventDetails.image}" class="img-fluid rounded-start det_img" alt="${eventDetails.name}">
-    </div>
-    <div class="col-md-6">
+        </div>
+        <div class="col-md-6">
         <div class="card-body">
             <h5 class="card-title">${eventDetails.name}</h5>
             <p class="card-text">${eventDetails.description}</p>
@@ -27,3 +32,5 @@ div.innerHTML = `<div class="row g-12">
          </div>
     </div>
 </div>`
+    })
+.catch(error => {console.log("Something went wrong!")})

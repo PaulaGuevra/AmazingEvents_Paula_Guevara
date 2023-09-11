@@ -1,15 +1,23 @@
 const pastEvents = [];
-for (const pastEvent of data.events) {
+
+fetch(url)
+.then(response => response.json())
+.then((responseData =>{
+    const data = responseData.events
+    const currentDate = responseData.currentDate;
+
+    for (const pastEvent of data) {
     const eventDate = (pastEvent.date);
-    const currentDate = (data.currentDate);
 
     if (eventDate <= currentDate) {
         pastEvents.push(pastEvent);
     }
+    console.log(pastEvents)
 }
-
-
 generateCards(pastEvents, cardContainer);
+
+}))
+
 
 
 document.addEventListener('change', e => {
@@ -22,3 +30,5 @@ document.addEventListener('change', e => {
 buscador.addEventListener('input', () => {
     searchAndFilter(pastEvents)
 })
+
+

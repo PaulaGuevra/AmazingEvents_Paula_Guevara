@@ -1,5 +1,8 @@
-const events = data.events
-const categories = events.map(event => event.category)
+fetch(url)
+.then(response => response.json())
+.then((responseData) => {
+    const data = responseData.events;
+    const categories = data.map(event => event.category)
 const reducedCategories = categories.reduce((accumulator, category) => {
     if (!accumulator.includes(category)) {
         accumulator.push(category);
@@ -10,21 +13,23 @@ const reducedCategories = categories.reduce((accumulator, category) => {
     }
 }, []);
 
+    let formContainer = document.getElementById("formContainer");
+    let htmlCheckbox = "";
+    reducedCategories.forEach(item => {
+        htmlCheckbox += `
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input categorychecks" type="checkbox" id="${item}" value="${item}">
+                <label class="form-check-label" for="${item}">
+                    ${item}
+                </label>
+            </div>
+        </div>`;
+        formContainer.innerHTML = htmlCheckbox;
+    })
+})
 
-let formContainer = document.getElementById("formContainer");
-let htmlCheckbox = "";
-reducedCategories.forEach(item => {
-    htmlCheckbox += `
-    <div class="col-12">
-        <div class="form-check">
-            <input class="form-check-input categorychecks" type="checkbox" id="${item}" value="${item}">
-            <label class="form-check-label" for="${item}">
-                ${item}
-            </label>
-        </div>
-    </div>`;
-    formContainer.innerHTML = htmlCheckbox;
-});
+
 
 function searchAndFilter(array) {
     let search = buscador.value.toLowerCase();
@@ -42,6 +47,7 @@ function searchAndFilter(array) {
         generateCards(filteredEvent, cardContainer);
     }
 }
+
 
 
 

@@ -109,77 +109,52 @@
 
         <!-- table -->
 
-        <div class="table-responsive mx-auto mt-5 mb-5 div_table">
+        <div class="table-responsive mx-auto mt-5 mb-5 div_table" id="t1">
             <table class="table table-secondary table-bordered table-striped-columns">
                 <caption class="d-none">Statistics</caption>
                 <thead class="table-dark">
                     <tr>
-                        <th scope="col" colspan="3">Event Statistics</th>
+                        <th scope="col" colspan="3" class="text-center">Event Statistics</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Event with highest % of assistance</th>
+                        <th scope="row">Event with lowest % of assistance</th>
+                        <th scope="row">Event with highest capacity</th>
                     </tr>
                 </thead>
-                <tbody class="table-group-divider">
-                    <tr>
-                        <th scope="row">Events with highest % of assistance</th>
-                        <th scope="row">Events with lowest % of assistance</th>
-                        <th scope="row">Events with larger capacity</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                <tbody class="table-group-divider">  
                 </tbody>
             </table>
-            <table class="table table-secondary table-bordered table-striped-columns">
+            <table class="table table-secondary table-bordered table-striped-columns" id="t2">
                 <caption class="d-none">Statistics</caption>
 
                 <thead class="table-dark">
                     <tr>
-                        <th scope="col" colspan="3">Upcoming Events Statistics by Category</th>
+                        <th scope="col" colspan="3" class="text-center">Upcoming Events Statistics by Category</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">Category</th>
+                        <th scope="row">Revenue</th>
+                        <th scope="row">Percentage of assitance</th>
                     </tr>
                 </thead>
                 <tbody>
+                </tbody>
+            </table>
+            <table class="table table-secondary table-bordered table-striped-columns" id="t3">
+                <caption class="d-none">Statistics</caption>
+
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col" colspan="3" class="text-center"> Past Events Statistics by Category</th>
+                    </tr>
                     <tr>
                         <th scope="row">Categoty</th>
                         <th scope="row">Revenue</th>
                         <th scope="row">Percentage of assitance</th>
                     </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-secondary table-bordered table-striped-columns">
-                <caption class="d-none">Statistics</caption>
-
-                <thead class="table-dark">
-                    <tr>
-                        <th scope="col" colspan="3"> Past Events Statistics by Category</th>
-                    </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">Categoty</th>
-                        <th scope="row">Revenue</th>
-                        <th scope="row">Percentage of assitance</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
                 </tbody>
 
             </table>
@@ -204,6 +179,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/upcoming_events.js"></script>
+        <script src="./js/past_events.js"></script>
+        <script src="./js/stats.js"></script>
 </body>
 
 </html>

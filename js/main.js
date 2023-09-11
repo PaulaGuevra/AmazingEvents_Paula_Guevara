@@ -1,4 +1,4 @@
-
+let events =[];
 let cardContainer = document.getElementById("eventContainer")
 
 function generateCards(array,cardContainer){
@@ -21,18 +21,28 @@ function generateCards(array,cardContainer){
   })
   cardContainer.innerHTML = html
 }
-generateCards(data.events,cardContainer)
+
+const url = "https://mindhub-xj03.onrender.com/api/amazing"
+
+fetch(url)
+.then(response=> response.json())
+.then(responseData => {
+  events = responseData.events
+  generateCards(responseData.events,cardContainer)
+})  
+
+
 
 
 
 document.addEventListener('change', e => {
   if (e.target.classList.contains('categorychecks')) {
-      searchAndFilter(data.events)
+      searchAndFilter(events)
 
   }
 })
 
 let buscador = document.querySelector('input[name=search]');
 buscador.addEventListener('input', () => {
-    searchAndFilter(data.events)
+    searchAndFilter(events)
 })
